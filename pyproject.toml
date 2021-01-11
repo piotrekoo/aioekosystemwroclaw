@@ -1,0 +1,38 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[tool.black]
+line-length = 80
+target-version = ['py38']
+
+[tool.isort]
+known_first_party = "aioekosystemwroclaw"
+line_length = 80
+multi_line_output = 3
+
+[tool.poetry]
+authors = ["Piotr Oleszczyk <piotr@oleszczyk.eu>"]
+description = "A Python 3, asyncio-based library for the Ekosystem Wrocław API"
+license = "MIT"
+name = "aioekosystemwroclaw"
+readme = "README.md"
+repository = "https://github.com/piotrekoo/aioekosystemwroclaw"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+aiohttp = "^3.7.3"
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+aresponses = "^2.1.0"
+black = "^20.8b1"
+flake8 = "^3.8.4"
+flake8-docstrings = "^1.5.0"
+freezegun = "^1.0.0"
+isort = "^5.7.0"
+pre-commit = "^2.9.3"
+pytest = "^6.2.1"
+pytest-asyncio = "^0.14.0"
+pytest-cov = "^2.10.1"
+toml-sort = "^0.18.0"
