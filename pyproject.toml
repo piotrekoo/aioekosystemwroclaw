@@ -21,7 +21,7 @@ repository = "https://github.com/piotrekoo/aioekosystemwroclaw"
 version = "0.1.0"
 
 [tool.poetry.dependencies]
-aiohttp = "^3.7.3"
+aiohttp = "3.7.1"
 python = "^3.8"
 
 [tool.poetry.dev-dependencies]
